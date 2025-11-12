@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - JWT Auth{% endblock %}
+
+{% block content %}
+<div class="landing-container">
+    <div class="landing-content">
+        <h1>Welcome to JWT Auth System</h1>
+        <p>Secure authentication with Django REST Framework</p>
+        <div class="landing-buttons">
+            <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+            <a href="{% url 'register' %}" class="btn btn-secondary">Register</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
